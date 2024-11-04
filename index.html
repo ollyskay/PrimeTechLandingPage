@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeTech Digital</title>
+
+  <link rel="manifest" href="./manifest.json">
+
+  <meta name="theme-color" content="#2E343F">
+
+
+  <link rel="stylesheet" href="styles.css">
+
+  
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="assets/img/primetech 1.png" alt="PrimeTech Digital Logo"> <!-- Ensure the path to your logo image is correct -->
+      </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      
+        <nav class="nav" id="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#ourbenefit">Our Benefits</a>
+          <a href="#ourservices">Our Services</a>
+          <a href="#contact" class="contact-button" aria-label="Contact Us">Contact Us</a>
+        </nav>
+    </div>
+  </header>
+
+  <script>
+    function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    const menuIcon = document.querySelector(".menu-icon");
+    navbar.classList.toggle("active");
+    menuIcon.classList.toggle("active");
+    // Prevent scrolling when menu is open
+    document.body.style.overflow = navbar.classList.contains("active") ? "hidden" : "";
+  }
+  
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.getElementById("navbar");
+      const menuIcon = document.querySelector(".menu-icon");
+      navbar.classList.remove("active");
+      menuIcon.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  });
+  </script>
+
+  <!-- Hero Section with background image -->
+
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <!-- <div class="hero-content"> -->
+        <h1>Transform Your Business with Advanced IT Solutions</h1>
+        <p>Partner with us for expert IT services that drive growth, efficiency, and elevate your digital strategy.</p>
+        <a href="#contact" class="" aria-label="Contact Us">Contact Us</a>
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <!-- Trusted by the best in the industry Section (Partners) -->
+ <section class="partners">
+  <div class="container">
+    <p>Trusted by the best in the industry.</p>
+    <div class="partners-logos">
+      <span><img src="assets/img/logo@beehive.png" alt="Beehive Logo"> </span>
+      <span><img src="assets/img/logo@chemistry.png" alt="Chemistry Logo"> </span>
+      <span><img src="assets/img/logo@looksmart.png" alt="Looksmart Logo"> </span>
+      <span><img src="assets/img/logo@cloud.png" alt="cloud Logo"> </span>
+
+    </div>
+  </div>
+ </section>
+
+ <!-- About PrimeTech Digital Section -->
+ <section id="about" class="about-section">
+  <div class="about-container">
+    <!-- Left Image Section -->
+    <div class="about-image">
+      <img src="assets/img/who are we.png" alt="About PrimeTech Digital"> 
+    </div>
+    
+    <!-- Right Content Section -->
+    <div class="about-content">
+      <h5 class="about-subtitle">WHO WE ARE</h5>
+      <h2 class="about-title">About PrimeTech Digital</h2>
+      <p class="about-description">
+        Primetech is a leading IT solutions provider focused on bridging the digital divide. We deliver cutting-edge IT services and empower individuals and businesses with essential digital skills. Our mission is to make technology accessible, offering tailored solutions aligned with your business needs.      </p>
+      
+      <!-- Feature List -->
+      <div class="about-features">
+        <div class="feature-item">
+          <img src="assets/img/Group (1).png" alt="Feature Icon">
+          <p>Innovative Approach<br><span class="feature-description">We deliver specialized IT solutions and services designed to streamline your business processes and drive sustainable growth.</span></p>
+
+        </div>
+        <div class="feature-item">
+          <img src="assets/img/Group.png" alt="Feature Icon"> <!-- Replace with appropriate icons -->
+          <p>Innovative Approach<br><span class="feature-description">Our expertise lies in delivering specialized technological and IT services.</span></p>
+        </div>
+      </div>
+      
+      <!-- Contact Button -->
+      <a href="#contact" class="about-contact-button">Contact Us</a>
+    </div>
+  </div>
+  </section>
+
+
+ <!-- Benefits Section -->
+ <section id="ourbenefit" class="benefits">
+  <div class="container">
+    <!-- Benefits Content Section -->
+    <div class="benefits-content">
+      <div class="benefits-text">
+        <h5>Our Benefits</h5>
+        <h2>Excelling synergy</h2>
+        <p>We need to build a culture of innovation to stay ahead of the curve. By fostering a culture of creativity and experimentation, we can encourage our teams to think outside the box and come up with new and exciting ideas.</p>
+        <a href="#contact" class="contact-button">Contact Us</a>
+      </div>
+
+      <!-- Benefits Cards -->
+      <div class="benefits-cards">
+        <div class="benefit-card">
+          <img src="assets/img/icon.png" alt="">
+          <h4>Disruptive innovation</h4>
+          <p>A new technology, product, or service that disrupts the older existing market and creates a new one.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="assets/img/icon Scale.png" alt="">
+          <h3>Scalability</h3>
+          <p>Custom solutions designed to allow you to scale effortlessly as your business needs evolve.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="assets/img/icon cost.png" alt="Synergy icon">
+          <h3>Cost-effectiveness</h3>
+          <p>High-quality services that deliver high ROI, helping you optimize budgets without compromising on quality.</p>
+        </div>
+        <div class="benefit-card">
+          <img src="assets/img/icon (1).png" alt="Paradigm shift icon">
+          <h3>End-to-End Support</h3>
+          <p>Highly-skilled professionals offering comprehensive assistance every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- Services Section -->
+ <section id="ourservices" class="services-section">
+  <h3 class="services-title">Our Services</h3>
+  <h2 class="services-heading">Comprehensive IT Solutions for Your Success</h2>
+  <p class="services-description">Our services are crafted to meet diverse digital needs, including:</p>
+  
+  <div class="services-grid">
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <img src="assets/img/SEoo.png" alt="SEO Optimization">
+        <h3>Search Engine Optimization</h3>
+        <p>Increase visibility and attract more customers by ranking higher on search engines.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <img src="assets/img/e-learning.png" alt="e-Learning Course Creation">
+        <h3>e-Learning Course Creation</h3>
+        <p>Deliver tailored, interactive learning experiences that boost engagement and knowledge retention.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card">
+        <img src="assets/img/No code Automation.png" alt="No-code AI Automation & Tools">
+        <h3>No-code AI Automation & Tools</h3>
+        <p>Streamline operations and improve efficiency with automated workflows—no coding needed.</p>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card">
+        <img src="assets/img/No code programming.png" alt="No-code Programming">
+        <h3>No-code Programming</h3>
+        <p>Quickly create powerful tools and applications without the need for complex coding.</p>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card">
+        <img src="assets/img/cybersecurity.png" alt="Cybersecurity">
+        <h3>Cybersecurity</h3>
+        <p>Protect your business with advanced security solutions that safeguard data and build customer trust.</p>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card">
+        <img src="assets/img/trainings.png" alt="Training Services">
+        <h3>Training Services</h3>
+        <p>Equip your team with essential tech skills to enhance productivity and adapt to digital changes.</p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- Why PrimeTech Digital Section -->
+  <section class="why-primetech">
+    <div class="why-header">
+    <h3 class="why-title">WHY PRIMETECH DIGITAL?</h3>
+    <h2 class="why-heading">Driving Growth</h2>
+
+    
+    <div class="stats-grid">
+  
+      <div class="stat">
+        <h3 class="stat-number">115+</h3>
+        <p class="stat-text">Completed Projects</p>
+      </div>
+      <div class="stat">
+        <h3 class="stat-number">25+</h3>
+        <p class="stat-text">Happy Clients</p>
+      </div>
+      <div class="stat">
+        <h3 class="stat-number">10</h3>
+        <p class="stat-text">Years of Experience</p>
+      </div>
+      <div class="stat">
+        <h3 class="stat-number">100</h3>
+        <p class="stat-text">Empowered Staff</p>
+      </div>
+    </div>
+  </div>
+
+ </section>
+
+ <section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-info">
+      <div class="heading-with-icon">
+        <h2>Let’s Talk</h2>
+        <img src="assets/img/graphic-element.png" alt="Paper Airplane Icon" class="icon"> 
+      </div>
+      <p>Have some big idea or brand to develop and need help? Then reach out; we’d love to hear about your project and provide help.</p>
+      <ul>
+        <li><strong>Location</strong><br>F1, Lagos City Mall, Lagos Island, Onikan</li>
+        <li><strong>Email</strong><br>hello@primetech.ng</li>
+        <li><strong>Call</strong><br>+234 814 802 9909</li>
+      </ul>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <select>
+          <option disabled selected>Select project type</option>
+          <option>Project Type 1</option>
+          <option>Project Type 2</option>
+        </select>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Footer Section -->
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>Connect with us for your IT services</h2>
+      <p>
+        Stay up-to-date with the latest news, products, and also promotions by following us on social media or subscribing to our newsletter.
+      </p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/img/Facebook Alt.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/img/Twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/img/Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/img/Linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">Item One</a></li>
+          <li><a href="#">Item Two</a></li>
+          <li><a href="#">Item Three</a></li>
+          <li><a href="#">Item Four</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Item One</a></li>
+          <li><a href="#">Item Two</a></li>
+          <li><a href="#">Item Three</a></li>
+          <li><a href="#">Item Four</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Item One</a></li>
+          <li><a href="#">Item Two</a></li>
+          <li><a href="#">Item Three</a></li>
+          <li><a href="#">Item Four</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 - PrimeTech Digital. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+ </footer>
+ <script>
+  document.querySelectorAll('.nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetSection = document.querySelector(this.getAttribute('href'));
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
